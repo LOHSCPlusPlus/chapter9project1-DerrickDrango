@@ -227,8 +227,12 @@ while (true){
     cout << endl;
   }
   if(input == 4){
-    cout << ""
-    printCarsByOrigin(cars, temp);
+    cout << endl;
+    char tempName[100];
+    setCharArray(tempName);
+    readCharArray("Enter Origin: ", tempName);
+    printCarsByOrigin(cars, tempName);
+    cout << endl;
   }
   if(input == 5){
     return 0;
